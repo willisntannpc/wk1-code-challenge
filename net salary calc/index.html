@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>net sal calc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>net sal calc</h1>
+        <form id="salaryForm">
+            <label for="basicSalary">basic sal:</label>
+            <input type="number" id="basicSalary" name="basicSalary" placeholder="enter basic sal" required>
+
+            <label for="benefits">benefits:</label>
+            <input type="number" id="benefits" name="benefits" placeholder="enter benefits" required>
+
+            <button type="submit">calc net sal</button>
+        </form>
+
+        <div id="results" class="results">
+            <p><strong>gross sal:</strong> <span id="grossSalary">0</span></p>
+            <p><strong>mssf deduction:</strong> <span id="nssfDeduction">0</span></p>
+            <p><strong>nhif deduction:</strong> <span id="nhifDeduction">0</span></p>
+            <p><strong>paye:</strong> <span id="payeeTax">0</span></p>
+            <p><strong>net sal:</strong> <span id="netSalary">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
